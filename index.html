@@ -6,6 +6,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Foundation Sandbox</title>
+  <link rel="stylesheet" href="css/icons/foundation-icons.css">
   <link rel="stylesheet" href="css/foundation.css">
   <link rel="stylesheet" href="css/app.css">
   <style>
@@ -16,6 +17,32 @@
 </head>
 
 <body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <ul class="dropdown menu" data-dropdown-menu>
+        <li class="menu-text">Site Title</li>
+        <li>
+          <a href="#">One</a>
+          <ul class="menu-vertical">
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Two</a></li>
+        <li><a href="#">Three</a></li>
+      </ul>
+    </div>
+
+    <div class="top-bar-right"></div>
+    <ul class="menu">
+      <li><input type="search" placeholder="Search"></li>
+      <li><button type="button" class="button">Search</button></li>
+    </ul>
+
+  </div>
 
   <!-- TYPOGRAPHY -->
 
@@ -180,12 +207,175 @@
           <input type="submit" class="button" value="Submit">
         </div>
       </div>
+
+      <div class="switch">
+        <input class="switch-input" id="mySwitch" type="checkbox" name="exampleSwitch">
+        <label for="mySwitch" class="switch-paddle">
+          <span class="show-for-sr">Enable</span>
+        </label>
+      </div>
+
+      <div class="slider" data-slider data-initial-start='0' data-end='20'>
+        <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+        <span class="slider-fill" data-slider-fill></span>
+        <input type="hidden">
+      </div>
     </form>
   </div>
 
+  <div class="row">
+
+    <!-- TABLES -->
+    <table class="unstriped hover stack table-scroll">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th> 
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>24</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>34</td>
+      </tr>
+      <tr>
+        <td>Steph</td>
+        <td>Landon</td>
+        <td>47</td>
+      </tr>
+      <tr>
+        <td>Mike</td>
+        <td>Johnson</td>
+        <td>19</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="row">
+
+    <!-- MENU -->
+    <ul class="menu">
+      <li class="menu-text">Site Title</li>
+      <li><a href="#">Link 1</a></li>
+      <li class="active"><a href="#">Link 2</a></li>
+      <li><a href="#">Link 3</a></li>
+      <li><a href="#">Link 4</a></li>
+    </ul>
+
+
+    <!-- ICONS -->
+    <ul class="menu">
+        <li><a href="#"><i class="fi-list"></i> <span>One</span></a></li>
+        <li><a href="#"><i class="fi-list"></i> <span>Two</span></a></li>
+        <li><a href="#"><i class="fi-list"></i> <span>Three</span></a></li>
+        <li><a href="#"><i class="fi-list"></i> <span>Four</span></a></li>
+      </ul>
+
+      <p>To be fair, Font awesome is better for icons than Foundation</p>
+  </div>
+
+  <hr>
+
+  <div class="row">
+
+    <!-- CALLOUTS -->
+    <div class="callout">
+      <p>This is an example of a callout</p>
+    </div>
+
+    <div class="callout secondary">
+        <p>This is an example of a callout</p>
+      </div>
+
+      <div class="callout success">
+          <p>This is an example of a callout</p>
+        </div>
+
+        <div class="callout warning">
+            <p>This is an example of a callout</p>
+          </div>
+
+          <div class="callout alert">
+              <p>This is an example of a callout</p>
+            </div>
+
+      <hr>
+      
+      <!-- PROGRESS BARS -->
+      <div class="success progress" role="progressbar">
+        <div class="progress-meter" style="width: 25%">
+        <p class="progress-meter-text">25%</p>
+        </div>
+      </div>
+      <div class="alert progress" role="progressbar">
+        <div class="progress-meter" style="width: 98%">
+        <p class="progress-meter-text">98%</p>
+        </div>
+      </div>
+      <div class="warning progress" role="progressbar">
+        <div class="progress-meter" style="width: 75%">
+        <p class="progress-meter-text">75%</p>
+        </div>
+      </div>
+  </div>
+
+  <hr>
+
+  <!-- LABELS -->
+  <span class="secondary label">Secondary Label</span>
+
+  <hr>
+
+  <!-- BADGES -->
+  <span class="alert badge">A</span>
+
+  <hr>
+
+  <!-- BREADCRUMBS -->
+  <nav role="navigation">
+    <ul class="breadcrumbs">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Posts</a></li>
+      <li>My Post</li>
+    </ul>
+  </nav>
+
+  <hr>
+
+  <!-- PAGINATION -->
+  <ul class="pagination" role="navigation">
+    <li class="disabled">Previous</li>
+    <li class="current">1</li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">Next</a></li>
+  </ul>
+
+  <hr>
+
+  <!-- GRID -->
+  <div class="grid-x grid-margin-x">
+    <div class="cell large-8 small-8 medium-6">
+      <h3>Main Column</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eum minima delectus dolorem quaerat placeat consequuntur voluptatum distinctio, obcaecati, ea recusandae nisi. Aut cumque asperiores sequi amet quod ea facere!</p>
+    </div>
+    <div class="cell large-4 small-4 medium-6">
+      <h3>Sidebar</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eum minima delectus dolorem</p>
+    </div>
+  </div>
+
   <div class="Spacer"></div>
-
-
 
   <script src="js/vendor/jquery.js"></script>
   <script src="js/vendor/what-input.js"></script>
